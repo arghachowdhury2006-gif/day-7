@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{
+    int a, n, i, j, k, m;
+
+    printf("Enter a number a: ");
+    scanf("%d", &a);
+    for (m = 1; m <= a; m++)
+    {
+        printf("%d ", m);
+    }
+    for (m = a - 1; m >= 1; m--)
+    {
+        printf("%d ", m);
+    }
+    printf("\n");
+    n = a - 1;
+    for (i = 1; i <= n; i++)
+    {
+
+        for (j = 1; j <= (n + 1) - i; j++)
+        {
+            printf("%d ", j);
+        }
+        for (k = 1; k <= (2 * i) - 1; k++)
+        {
+            printf("  ");
+        }
+        for (j = (n + 1) - i; j >= 1; j--)
+        {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
