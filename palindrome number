@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+	int n,sum, revers, org;
+	printf("Enter a number n: ");
+	scanf("%d", &n);
+	org=n;
+	while(n!=0) {
+	revers =+ revers*10 +(n%10);
+	n =n/10;	
+	} 
+	if(revers==org)
+	printf("the no is palindrom");
+	else
+	printf("the no is not palindrom");                                                                                                                                                                                
+
+	return 0;
+}
